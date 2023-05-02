@@ -1,0 +1,10 @@
+{
+    "analysis": {
+        "input": "analysis-input.txt",
+        "mode": "mas-disam"
+    },
+    "generation": {
+        "input": "generation-input.txt",
+        "mode": "mas-gener"
+    }
+}

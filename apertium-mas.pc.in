@@ -1,0 +1,8 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+srcdir=@datarootdir@/apertium/apertium-mas
+
+Name: apertium-mas
+Description: Finite-state morphological transducer and constraint grammar for Masai
+Version: @VERSION@
+
