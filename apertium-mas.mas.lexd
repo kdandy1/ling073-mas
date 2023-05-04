@@ -41,7 +41,7 @@ Verbs
 
 PATTERN Verbs
 PersonalPrefix(1) VerbRoot PersonalPrefix(2) # Present 
-PersonalPrefix(1) VerbRoot Vowel VerbRoot Vowel PersonalPrefix(2) #Present (p2 pl)
+PersonalPrefix(1) VerbRoot Vowels VerbRoot Vowels PersonalPrefix(2) #Present (p2 pl)
 PersonalPrefix(1) VerbRoot PresentImperfectSuffix(1) #present imperfect
 
 
@@ -92,7 +92,15 @@ isuj<vblex>:isuj
 pik<vblex>:pik
 bik<vblex>:bik
 inos<vblex>:inos
-iruk<vblex>:irok
+iruk<vblex>:iruk
+
+LEXICON SecondPersonPluralInfo
+:suj>
+:isuj>
+:pik>
+:bik>
+:inos>
+:iruk>
 
 
 

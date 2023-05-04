@@ -11,8 +11,7 @@ Vowel = A Ä Á E Ẽ É I Í Ĩ O Ō Ö Ó U Ū Ú Y
         a ä á e ẽ é i í ĩ o ō ö ó u ū ú y ;
 
 Rules
-#remember to add a rule for the present second plural vowel, honestly i' thinking about it wrong 
-#it should be duplidat up ot the nearst vowl and add vowels surrounding. 
+
 
 "Remove suffix vowel with vowel-ending stem"
 i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
