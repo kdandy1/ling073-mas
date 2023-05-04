@@ -1,14 +1,18 @@
 Alphabet
- A B Ç D E Ä F G H I J Ž K L M N Ň O Ö P R S Ş T U Ü W Y Ý Z
- a b ç d e ä f g h i j ž k l m n ň o ö p r s ş t u ü w y ý z
- %{A%}:a %>:0  ;
+ A Ä Á B C D E Ẽ É G H I Í Ĩ J K L M O Ō Ö Ó P R S T U Ū Ú W Y Z
+ a ä á b c d e ẽ é g h i í ĩ j k l m o ō ö ó p r s t u ū ú w y z
+%{a%}:a %{a%}:0 %>:0
+%{k%}:k %{k%}:0 %>:0
+;
 
 Sets
 
-Vowel = A E Ä I O Ö U Ü Y Ý
-        a e ä i o ö u ü y ý ;
+Vowel = A Ä Á E Ẽ É I Í Ĩ O Ō Ö Ó U Ū Ú Y
+        a ä á e ẽ é i í ĩ o ō ö ó u ū ú y ;
 
 Rules
+#remember to add a rule for the present second plural vowel, honestly i' thinking about it wrong 
+#it should be duplidat up ot the nearst vowl and add vowels surrounding. 
 
 "Remove suffix vowel with vowel-ending stem"
 i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;

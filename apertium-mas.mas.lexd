@@ -2,7 +2,7 @@
 
 # Part of speech categories
 # <n>      # Noun
-# <v>      # Verb
+# <vblex>  # Lexical Verb
 # <adj>    # Adjective
 # <num>    # Numeral
 
@@ -20,24 +20,31 @@
 # <pl>     # Plural
 # <sg>     # Singular
 
-# Other symbols
-# >        # Morpheme boundary
+
+# Person symbols
+# <p1>    # first person
+# <p2>    # second person
+# <p3>    # third person
+
+# Tense symbols 
+# <prs>      # Present (Indefinite)
+# <prs_impf> # Present Imperfect
 
 ###############################################################################
 ###                       M O R P H O T A C T I C S                         ###
 ###############################################################################
 
 PATTERNS
-## Example inflection pattern:
-# NounRoot RegNounInfl
 Number
 Punctuation
+Verbs
+
+PATTERN Verbs
+PersonalPrefix(1) VerbRoot PersonalPrefix(2) # Present 
+PersonalPrefix(1) VerbRoot Vowel VerbRoot Vowel PersonalPrefix(2) #Present (p2 pl)
+PersonalPrefix(1) VerbRoot PresentImperfectSuffix(1) #present imperfect
 
 
-## Example inflection lexicon:
-# LEXICON RegNounInfl
-# <n><sg>:
-# <n><pl>:>s
 
 
 ###############################################################################
@@ -63,6 +70,30 @@ LEXICON Numeral
 7
 8
 9
+
+LEXICON PersonalPrefix(2)
+:A{a}>  <p1><sg>: # sometimes A sometimes Aa
+:ki> <p1><pl>:
+:{K}i>  <p2><sg>:
+:{K}i>  <p2><pl>: # might want to separate
+:e>  <p3><sg>:
+:e>  <p3><pl>:
+
+LEXICON PresentImperfectSuffix
+:ita>
+
+LEXICON Vowels
+:{a}>
+
+
+LEXICON VerbRoot
+suj<vblex>:suj
+isuj<vblex>:isuj
+pik<vblex>:pik
+bik<vblex>:bik
+inos<vblex>:inos
+iruk<vblex>:irok
+
 
 
 LEXICON Punctuation
