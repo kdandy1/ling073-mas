@@ -39,6 +39,7 @@ Number
 Punctuation
 Verbs
 Nouns
+Adjectives
 
 PATTERN Number
 Numeral+ [<num>:]
@@ -51,7 +52,8 @@ PersonalPrefix(1) VerbRoot PresentImperfectSuffix(1) #present imperfect
 PATTERN Nouns
 (:GenderPrefix(1) NounRoot GenderPrefix(2):)[^[N,F,M],^[Sg,Pl]]
 
-
+PATTERN Adjectives
+Adjective
 
 ###############################################################################
 ###                          L E X I C O N                                  ###
@@ -132,6 +134,47 @@ bene<n><f><pl>:benia[F,Pl]
 wueji<n><n><sg>:wueji[N,Sg]         #place
 wueji<n><n><pl>:wuejitin[N,Pl]
 
+LEXICON Adjective
+#only different for sing and plural, and plurals are as various as w/Nouns
+arriyia<adj><sg>:arriyia        #skilled  
+arriyia<adj><pl>:arriyak
+bioto<adj><sg>:bioto            #healthy
+bioto<adj><pl>:biot             
+botor<adj><sg>:botor            #old
+botor<adj><pl>:botoro
+dapash<adj><sg>:dapash          #wide
+dapash<adj><pl>:dapashi
+dalut<adj><sg>:dalut            #mischievous
+dalut<adj><pl>:daluti   
+dorrop<adj><sg>:dorrop          #short
+dorrop<adj><pl>:dorropu
+kalamas<adj><sg>:kalamas        #busy, clever
+kalamas<adj><pl>:kalamasi
+kirotet<adj><sg>:kirotet        #favorite
+kirotet<adj><sg>:kiroteti
+kitok<adj><sg>:kitok            #big, important
+kitok<adj><pl>:kituaak          
+ngejuk<adj><sg>:ngejuk          #new
+ngejuk<adj><pl>:ngejuko
+ronkai<adj><sg>:ronkai          #narrow, thin
+ronkai<adj><pl>:ronkeni 
+supat<adj><sg>:supat            #good (morally)
+supat<adj><pl>:supati   
+sidai<adj><sg>:sidai            #nice, beautiful
+sidai<adj><pl>:sidan
+torrono<adj><sg>:torrono        #bad
+torrono<adj><pl>:torrok         
+karsis<adj><sg>:karsis          #rich
+karsis<adj><pl>:karsisi
+aisinani<adj><sg>:aisinani      #poor
+aisinani<adj><pl>:aisinak
+asipani<adj><sg>:asipani        #truthful
+asipani<adj><pl>:asipak         
+sikitoi<adj><sg>:sikitoi        #yellow
+sikitoi<adj><pl>:sikitok
+
+
+
 LEXICON Numeral
 0
 1
@@ -167,24 +210,24 @@ LEXICON SecondPersonPluralInfo
 :iruk>
 
 LEXICON GenderPrefix(2)
-:o{L}>  <nom>:[M,Sg] 
-:i{L}>  <nom>:[M,Pl]
-:e{n}{K}>    <nom>:[F,Sg]
-:i{n}{K}>    <nom>:[F,Pl]
-:e>     <nom>:[N,Sg] 
-:i>     <nom>:[N,Pl] 
+:o{L}>      <nom>:[M,Sg] 
+:i{L}>      <nom>:[M,Pl]
+:e{n}{K}>   <nom>:[F,Sg]
+:i{n}{K}>   <nom>:[F,Pl]
+:e>         <nom>:[N,Sg] 
+:i>         <nom>:[N,Pl] 
 
-:o{L}>    <acc>:[M,Sg]
-:i{L}>    <acc>:[M,Pl]
-:e{n}{K}>    <acc>:[F,Sg]
-:i{n}{K}>    <acc>:[F,Pl]
-:e>     <acc>:[N,Sg]
-:i>     <acc>:[N,Pl] 
+:o{L}>      <acc>:[M,Sg]
+:i{L}>      <acc>:[M,Pl]
+:e{n}{K}>   <acc>:[F,Sg]
+:i{n}{K}>   <acc>:[F,Pl]
+:e>         <acc>:[N,Sg]
+:i>         <acc>:[N,Pl] 
 
-:le>    <voc>:[M,Sg]
-:le>    <voc>:[M,Pl]
-:na>    <voc>:[F,Sg]
-:na>    <voc>:[F,Pl]
+:le>        <voc>:[M,Sg]
+:le>        <voc>:[M,Pl]
+:na>        <voc>:[F,Sg]
+:na>        <voc>:[F,Pl]
 
 LEXICON Punctuation
 

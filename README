@@ -61,10 +61,10 @@ If you are in the source directory after running make, the following
 commands should work:
 
 ```console
-$ echo "TODO: test sentence" | apertium -d . mas-morph
+$ echo "test sentence" | apertium -d . mas-morph
 TODO: test analysis result
 
-$ echo "TODO: test sentence" | apertium -d . mas-tagger
+$ echo "test sentence" | apertium -d . mas-tagger
 TODO: test tagger result
 ```
 
