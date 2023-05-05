@@ -2,6 +2,7 @@ Alphabet
  A Ä Á B C D E Ẽ É G H I Í Ĩ J K L M O Ō Ö Ó P R S T U Ū Ú W Y Z
  a ä á b c d e ẽ é g h i í ĩ j k l m o ō ö ó p r s t u ū ú w y z
 %{a%}:a %{a%}:0 %>:0
+%{A%}:a %{A%}:e %{A%}:i %{A%}:o %{A%}:u
 %{k%}:k %{k%}:0 
 %{L%}:l %{L%}:0 
 %{n%}:n %{n%}:m %{n%}:0 
@@ -12,8 +13,16 @@ Sets
 
 Vowel = A Ä Á E Ẽ É I Í Ĩ O Ō Ö Ó U Ū Ú Y
         a ä á e ẽ é i í ĩ o ō ö ó u ū ú y ;
+C = B C D G H J K L M P R S T R W Z 
+    b c d g h j k l m p r s t r w z ;
 
 Rules
+
+"Vowel is realized as vowel two place before (in root)"
+%{A%}:Vy <=> :Vx :C %>: _ ;
+      where Vx in ( a e i o u )
+            Vy in ( a e i o u )
+      matched ;
 
 "Remove suffix vowel with vowel-ending stem"
 i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;

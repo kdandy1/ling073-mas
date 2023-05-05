@@ -45,9 +45,9 @@ PATTERN Number
 Numeral+ [<num>:]
 
 PATTERN Verbs
-PersonalPrefix(1) VerbRoot PersonalPrefix(2) # Present 
-PersonalPrefix(1) VerbRoot Vowels VerbRoot Vowels PersonalPrefix(2) #Present (p2 pl)
-PersonalPrefix(1) VerbRoot PresentImperfectSuffix(1) #present imperfect
+PresentPrefix(1) VerbRoot(1) PresentPrefix(2) # Present 
+SecondPersonPluralPrefix(1) VerbRoot(1) Vowels VerbRoot(2) Vowels SecondPersonPluralPrefix(2) #Present (p2 pl)
+PresentImpfPrefix(1) VerbRoot PresentImperfectSuffix(1) #present imperfect
 
 PATTERN Nouns
 (:GenderPrefix(1) NounRoot GenderPrefix(2):)[^[N,F,M],^[Sg,Pl]]
@@ -63,13 +63,16 @@ Adjective
 # LEXICON NounRoot
 # house:house   # A noun
 
-LEXICON VerbRoot
-suj<vblex>:suj
-isuj<vblex>:isuj
-pik<vblex>:pik
-bik<vblex>:bik
-inos<vblex>:inos
-iruk<vblex>:iruk
+
+
+LEXICON VerbRoot(2)
+suj<vblex>:suj>     :suj>
+isuj<vblex>:isuj>   :suj>
+pik<vblex>:pik>     :pik>
+bik<vblex>:bik>     :bik>
+inos<vblex>:inos>   :inos>
+iruk<vblex>:iruk>   :iruk>
+
 
 LEXICON NounRoot
 #masc
@@ -155,7 +158,7 @@ kirotet<adj><sg>:kiroteti
 kitok<adj><sg>:kitok            #big, important
 kitok<adj><pl>:kituaak          
 ngejuk<adj><sg>:ngejuk          #new
-ngejuk<adj><pl>:ngejuko
+ngejuk<adj><pl>:ngejuko 
 ronkai<adj><sg>:ronkai          #narrow, thin
 ronkai<adj><pl>:ronkeni 
 supat<adj><sg>:supat            #good (morally)
@@ -187,19 +190,35 @@ LEXICON Numeral
 8
 9
 
-LEXICON PersonalPrefix(2)
-:A{a}>  <p1><sg>: # sometimes A sometimes Aa
-:ki> <p1><pl>:
-:{K}i>  <p2><sg>:
-:{K}i>  <p2><pl>: # might want to separate
-:e>  <p3><sg>:
-:e>  <p3><pl>:
+
+LEXICON  PresentPrefix(2)
+:A{a}>  <prs><p1><sg>: # sometimes A sometimes Aa
+:ki>    <prs><p1><pl>:
+:{K}i>  <prs><p2><sg>:
+:e>     <prs><p3><sg>:
+:e>     <prs><p3><pl>:
+
+LEXICON SecondPersonPluralPrefix(2)
+:{K}i>  <prs><p2><pl>: # might want to separate
+
+
+LEXICON PresentImpfPrefix(2)
+:A{a}>  <prs_impf><p1><sg>: # sometimes A sometimes Aa
+:ki>    <prs_impf><p1><pl>:
+:{K}i>  <prs_impf><p2><sg>:
+:{K}i>  <prs_impf><p2><pl>: # might want to separate
+:e>     <prs_impf><p3><sg>:
+:e>     <prs_impf><p3><pl>:
+
 
 LEXICON PresentImperfectSuffix
 :ita>
 
+# PresentPrefix(1) VerbRoot(1) Vowels VerbRoot(2) Vowels PresentPrefix(2) #Present (p2 pl)
+
+
 LEXICON Vowels
-:{a}>
+:{A}>
 
 LEXICON SecondPersonPluralInfo
 :suj>
