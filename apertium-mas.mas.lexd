@@ -38,12 +38,18 @@ PATTERNS
 Number
 Punctuation
 Verbs
+Nouns
+
+PATTERN Number
+Numeral+ [<num>:]
 
 PATTERN Verbs
 PersonalPrefix(1) VerbRoot PersonalPrefix(2) # Present 
 PersonalPrefix(1) VerbRoot Vowels VerbRoot Vowels PersonalPrefix(2) #Present (p2 pl)
 PersonalPrefix(1) VerbRoot PresentImperfectSuffix(1) #present imperfect
 
+PATTERN Nouns
+(:GenderPrefix(1) NounRoot GenderPrefix(2):)[^[N,F,M],^[Sg,Pl]]
 
 
 
@@ -55,9 +61,76 @@ PersonalPrefix(1) VerbRoot PresentImperfectSuffix(1) #present imperfect
 # LEXICON NounRoot
 # house:house   # A noun
 
+LEXICON VerbRoot
+suj<vblex>:suj
+isuj<vblex>:isuj
+pik<vblex>:pik
+bik<vblex>:bik
+inos<vblex>:inos
+iruk<vblex>:iruk
 
-PATTERN Number
-Numeral+ [<num>:]
+LEXICON NounRoot
+#masc
+ayioni<n><m><sg>:ayioni[M,Sg]       #boy
+ayioni<n><m><pl>:ayiok[M,Pl]
+payian<n><m><sg>:payian[M,Sg]       #elder
+payian<n><m><pl>:payiani[M,Pl]
+doinyo<n><m><sg>:doinyo[M,Sg]       #mountain
+doinyo<n><m><pl>:doinyo[M,Pl]
+lee<n><m><sg>:lee[M,Sg]		        #man
+lee<n><m><pl>:lewa[M,Pl]
+langet<n><m><sg>langet[M,Sg]        #bridge
+langet<n><m><pl>langeta[M,Pl]
+loililai<n><m><sg>loililai[M,Sg]    #shoulder
+loililai<n><m><pl>loilila[M,Pl]
+reyiet<n><m><sg>:reyiet[M,Sg]	    #river
+reyiet<n><m><pl>:reyieta[M,Pl]
+sesen<n><m><sg>:sesen[M,Sg]	        #body
+sesen<n><m><pl>:seseni[M,Pl]
+soit<n><m><sg>soit[M,Sg]            #stone
+soit<n><m><pl>:soito[M,Pl]
+yoyai<n><m><sg>yoyai[M,Sg]          #porcupine
+yoyai<n><m><pl>yoyain[M,Pl]
+
+#fem
+tito<n><f><sg>:tito[F,Sg]           #girl
+tito<n><f><pl>:toyie[F,Pl]
+kitok<n><f><sg>:kitok[F,Sg]         #woman, wife 
+kitok<n><f><pl>:kituaak[F,Pl]
+jore<n><f><sg>:jore[F,Sg]           #war
+jore<n><f><pl>:jorin[F,Pl]
+kiteng<n><f><sg>:kiteng[F,Sg]       #cow
+kiteng<n><f><pl>:kishu[F,Pl]
+kume<n><f><sg>:kume[F,Sg]           #nose
+kume<n><f><pl>:kumeishin[F,Pl]
+kima<n><f><sg>:kima[F,Sg]           #fire
+kima<n><f><pl>:kimaitie[F,Pl]
+lukunya<n><f><sg>:lukunya[F,Sg]     #head
+lukunya<n><f><pl>:lukuny[F,Pl]  
+rruat<n><f><sg>:rruat[F,Sg]         #bed
+rruat<n><f><pl>:rruatin[F,Pl]
+siaai<n><f><sg>:siaai[F,Sg]         #work
+siaai<n><f><pl>:siaaitin[F,Pl]
+solei<n><f><sg>:solei[F,Sg]         #goat
+solei<n><f><pl>:solen[F,Pl]
+ululu<n><f><sg>:ululu[F,Sg]         #drum
+ululu<n><f><pl>:ulului[F,Pl]
+wuaso<n><f><sg>:wuaso[F,Sg]         #river
+wuaso<n><f><pl>:wuason[F,Pl]
+aina<n><f><sg>:aina[F,Sg]           #hand, arm
+aina<n><f><pl>:aik[F,Pl]
+ongu<n><f><sg>:ongi[F,Sg]           #eye
+ongu<n><f><pl>:onyek[F,Pl]
+paash<n><f><sg>:paash[F,Sg]         #difference
+paash<n><f><pl>:paashi[F,Pl]
+pisai<n><f><sg>:pisai[F,Sg]         #money
+pisai<n><f><pl>:pisai[F,Pl]
+bene<n><f><sg>:bene[F,Sg]           #bag
+bene<n><f><pl>:benia[F,Pl]
+
+#neuter
+wueji<n><n><sg>:wueji[N,Sg]         #place
+wueji<n><n><pl>:wuejitin[N,Pl]
 
 LEXICON Numeral
 0
@@ -85,15 +158,6 @@ LEXICON PresentImperfectSuffix
 LEXICON Vowels
 :{a}>
 
-
-LEXICON VerbRoot
-suj<vblex>:suj
-isuj<vblex>:isuj
-pik<vblex>:pik
-bik<vblex>:bik
-inos<vblex>:inos
-iruk<vblex>:iruk
-
 LEXICON SecondPersonPluralInfo
 :suj>
 :isuj>
@@ -102,7 +166,25 @@ LEXICON SecondPersonPluralInfo
 :inos>
 :iruk>
 
+LEXICON GenderPrefix(2)
+:o{L}>  <nom>:[M,Sg] 
+:i{L}>  <nom>:[M,Pl]
+:e{n}{K}>    <nom>:[F,Sg]
+:i{n}{K}>    <nom>:[F,Pl]
+:e>     <nom>:[N,Sg] 
+:i>     <nom>:[N,Pl] 
 
+:o{L}>    <acc>:[M,Sg]
+:i{L}>    <acc>:[M,Pl]
+:e{n}{K}>    <acc>:[F,Sg]
+:i{n}{K}>    <acc>:[F,Pl]
+:e>     <acc>:[N,Sg]
+:i>     <acc>:[N,Pl] 
+
+:le>    <voc>:[M,Sg]
+:le>    <voc>:[M,Pl]
+:na>    <voc>:[F,Sg]
+:na>    <voc>:[F,Pl]
 
 LEXICON Punctuation
 

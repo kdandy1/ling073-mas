@@ -2,7 +2,10 @@ Alphabet
  A Ä Á B C D E Ẽ É G H I Í Ĩ J K L M O Ō Ö Ó P R S T U Ū Ú W Y Z
  a ä á b c d e ẽ é g h i í ĩ j k l m o ō ö ó p r s t u ū ú w y z
 %{a%}:a %{a%}:0 %>:0
-%{k%}:k %{k%}:0 %>:0
+%{k%}:k %{k%}:0 
+%{L%}:l %{L%}:0 
+%{n%}:n %{n%}:m %{n%}:0 
+%{K%}:0 %{K%}:k
 ;
 
 Sets
@@ -12,9 +15,20 @@ Vowel = A Ä Á E Ẽ É I Í Ĩ O Ō Ö Ó U Ū Ú Y
 
 Rules
 
-
 "Remove suffix vowel with vowel-ending stem"
 i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
+
+"Remove l when the noun root begins with l, r, s, or y (for now restricted to m prefixes)"
+%{L%}:0 <=> [ o | i ] _ %>: [ l | r | s | y ] ; 
+
+"Keep k when the noun begins with an a or o(fem prefix)"
+%{K%}:k <=> [ e | i ] %{n%}: _ %>: [ a | o ] ; 
+
+"Remove n when the noun root begins with l, r, s, y, m, n, u, or w (it's a lot, but it's specifically what the grammar book says) (for now restricted to f prefixes)"
+%{n%}:0 <=> [ e | i ] _ %>: [ l | r | s | y | m | n | u | w ] ; 
+
+"n changes to m when the noun root begins with p or b (bilabials woo!) (for f prefixes, but made it more general bc seems common)"
+%{n%}:m <=> _ :0 %>: [ p | b ] ; 
 
 ! Resources:
 ! https://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Enter_twol
