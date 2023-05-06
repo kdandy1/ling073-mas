@@ -3,6 +3,8 @@ Alphabet
  a ä á b c d e ẽ é g h i í ĩ j k l m o ō ö ó p r s t u ū ú w y z
 %{a%}:a %{a%}:0 %>:0
 %{A%}:a %{A%}:e %{A%}:i %{A%}:o %{A%}:u
+%{E%}:e %{E%}:a %{E%}:i %{E%}:o %{E%}:u
+%{0%}:0 %{0%}:a %{0%}:e %{0%}:i %{0%}:o %{0%}:u
 %{k%}:k %{k%}:0 
 %{L%}:l %{L%}:0 
 %{n%}:n %{n%}:m %{n%}:0 
@@ -21,14 +23,20 @@ C = B C D G H J K L M P R S T R W Z
 
 Rules
 
-"Vowel is realized as vowel two places before itself (in root, for present-p2pl)"
-%{A%}:Vy <=> :Vx :C %>: _ ;
+"Vowel is realized as same vowel two places before itself (in root, for present-p2pl)"
+%{A%}:Vy <=> :Vx (:C) %>: _ ;
       where Vx in ( a e i o u )
             Vy in ( a e i o u )
       matched ;
 
-"Vowel is realized as vowel two or three after itself (in root, for past)"
+"Vowel is realized as same vowel two or three after itself (in root, for past)"
 %{E%}:Vy <=> _ %>: (:C) :C :Vx ;
+      where Vx in ( a e i o u )
+            Vy in ( a e i o u )
+      matched ;
+
+"If there is a consonant after the vowel in mention, realize vowel as same vowel one or two after the consonant"
+%{0%}:Vy <=> _ %>: (:C) :C :Vx ;
       where Vx in ( a e i o u )
             Vy in ( a e i o u )
       matched ;

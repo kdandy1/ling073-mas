@@ -41,6 +41,10 @@ Verbs
 Nouns
 Adjectives
 Particles
+Adverbs
+Pronouns
+Interjections
+CoorConj
 
 PATTERN Number
 Numeral+ [<num>:]
@@ -50,10 +54,7 @@ PresentPrefix(1) VerbRoot(1) PresentPrefix(2) # Present
 PresentSecondPersonPluralPrefix(1) VerbRoot(1) PresentVowels VerbRoot(2) PresentVowels PresentSecondPersonPluralPrefix(2) #Present (p2 pl)
 (:GeneralPersonalPrefix(1) VerbRoot PresentImperfectSuffix(1) GeneralPersonalPrefix(2):)[^[Open,Closed]] #present imperfect
 (:GeneralPersonalPrefix(1) PastPrefix VerbRoot(1) PastSuffix  GeneralPersonalPrefix(1):)[^[Open,Closed],^[ConsonantInitial]] #past tense 
-(:NarrativeTensePrefix GeneralPersonalPrefix(1) VerbRoot NarrativeTenseSuffix GeneralPersonalPrefix(2):)[^[Open,Closed]] #present imperfect
-
-
-
+NarrativeTensePrefix(1) GeneralPersonalPrefix(1) VerbRoot NarrativeTensePrefix(2) GeneralPersonalPrefix(2) #present imperfect
 
 PATTERN Nouns
 (:GenderPrefix(1) NounRoot GenderPrefix(2):)[^[N,F,M],^[Sg,Pl]]
@@ -64,6 +65,17 @@ Adjective
 PATTERN Particles
 Particle
 
+PATTERN Adverbs
+Adverbs
+
+PATTERN Pronouns
+Pronouns
+
+PATTERN Interjections
+Interjections
+
+PATTERN CoorConj
+CoorConj
 ###############################################################################
 ###                          L E X I C O N                                  ###
 ###############################################################################
@@ -81,15 +93,22 @@ pik<vblex>:pik>[Open,ConsonantInitial]   :pik>
 bik<vblex>:bik>[Closed,ConsonantInitial] :bik>
 inos<vblex>:inos>[Open]                  :inos>
 iruk<vblex>:iruk>[Closed]                :iruk>
-yer<vblex>:yer>[Open,ConsonantInitial]  :yer>
-gil<vblex>:gil>[Open,ConsonantInitial]  :gil>
+yer<vblex>:yer>[Open,ConsonantInitial]   :yer>
+gil<vblex>:gil>[Open,ConsonantInitial]   :gil>
 iyam<vblex>:iyam>[Open]                  :iyam>
 iken<vblex>:iken>[Open]                  :iken>
 inos<vblex>:inos>[Open]                  :inos>
+joki<vblex>:joki[Open,ConsonantInitial]                   :joki>
+jo<vblex>:jo[Open,ConsonantInitial]                       :jo>
+lo<vblex>:lo[Open,ConsonantInitial]                       :lo>	#to go
+toni<vblex>:toni[Open,ConsonantInitial]  :toni>  
 
 
 LEXICON NounRoot
 #masc
+apa<n><m><sg>:apa[M,Sg]		#moon, month
+apa<n><m><pl>:apaitin[M,Pl]
+papa<n><m><sg>:papa[M,Sg]	#father (one’s own)
 ayioni<n><m><sg>:ayioni[M,Sg]       #boy
 ayioni<n><m><pl>:ayiok[M,Pl]
 payian<n><m><sg>:payian[M,Sg]       #elder
@@ -110,6 +129,18 @@ soit<n><m><sg>soit[M,Sg]            #stone
 soit<n><m><pl>:soito[M,Pl]
 yoyai<n><m><sg>yoyai[M,Sg]          #porcupine
 yoyai<n><m><pl>yoyain[M,Pl]
+botor<n><m><sg>:botor[M,Sg]
+botoro<n><m><pl>:botoro[M,Sg]
+tome<n><m><sg>:tome[M,Sg]
+pul<n><m><sg>:pul[M,Sg]
+murani<n><m><sg>:murani[M,Sg]     #
+alashe<n><m><sg>:alashe[M,Sg]    #brother
+alashera<n><m><pl>:alashera[M,Pl]
+oti<n><m><sg>:oti[M,Sg]
+bene<n><m><sg>bene[M,Sg]    #bag
+benia<n><m><pl>benia[M,Pl]    #bag
+sero<n><m><sg>:sero[M,Sg]
+seroi<n><m><pl>:seroi[M,Pl]
 
 #fem
 tito<n><f><sg>:tito[F,Sg]           #girl
@@ -146,6 +177,15 @@ pisai<n><f><sg>:pisai[F,Sg]         #money
 pisai<n><f><pl>:pisai[F,Pl]
 bene<n><f><sg>:bene[F,Sg]           #bag
 bene<n><f><pl>:benia[F,Pl]
+kolong<n><f><sg>:kolong[F,Sg]	#sun
+yeyo<n><m><sg>:yeyo[F,Sg]	#mother (one’s own)
+kai<n><f><sg>:kai[F,Sg] #God
+kaitin<n><f><sg>:kaitin[F,Pl]
+gitojo<n><f><sg>:gitojo[F,Sg] #hare 
+gukuu<n><f><sg>:gukuu[F,Sg]
+gare<n><f><sg>:gare[F,Sg]
+
+
 
 #neuter
 wueji<n><n><sg>:wueji[N,Sg]         #place
@@ -200,6 +240,28 @@ e<part>:e           #genitive if both are feminine in method 2
 
 LEXICON CoorConj
 o<cnjcoo>:o{O}
+amu<conjcoo>:amu 
+ana<conjcoo>:ana
+
+
+LEXICON Adverbs
+apa<adv>:apa
+oshi<adv>:oshi
+ore<adv>:ore
+pe<adv>:pe
+
+
+LEXICON Pronouns
+nanu<prn><p1><sg>:nanu
+yook<prn><p1><pl>:yook
+iyie<prn><p2><sg>:iy{i}e
+ndai<prn><p2><pl>:ndai
+nenye<prn><p3><sg>:nenye
+nenje<prn><p3><pl>:nenje
+
+LEXICON Interjections  
+oi<ij>:oi
+
 
 LEXICON Numeral
 0
@@ -222,14 +284,14 @@ LEXICON  PresentPrefix(2)
 :e>     <prs><p3><pl>:
 
 LEXICON PresentSecondPersonPluralPrefix(2)
-:{K}i>  <prs><p2><pl>: # might want to separate
+:{K}i>  <prs><p2><pl>: 
 
 LEXICON PresentVowels
 :{A}>
 
 
 LEXICON GeneralPersonalPrefix(2)
-:A{a}>  <p1><sg>: # sometimes A sometimes Aa
+:a{a}>  <p1><sg>: # sometimes A sometimes Aa
 :ki>    <p1><pl>:
 :{K}i>  <p2><sg>:
 :{K}i>  <p2><pl>: 
@@ -249,12 +311,10 @@ LEXICON PastSuffix
 <past>:o>[Closed]
 
 
-NarrativeTensePrefix
-:n>
+LEXICON NarrativeTensePrefix(2)
+:n{0}>  <narr>: 
 
-NarrativeTenseSuffix
-<narr>:ita>[Open]
-<narr>:ito>[Closed]
+
 
 LEXICON GenderPrefix(2)
 :o{L}>      <nom>:[M,Sg] 
