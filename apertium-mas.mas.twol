@@ -9,6 +9,7 @@ Alphabet
 %{K%}:0 %{K%}:k
 %{e%}:e %{e%}:i
 %{O%}:o %{O%}:0
+%{i%}:i %{i%}:0
 ;
 
 Sets
