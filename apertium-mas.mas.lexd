@@ -46,8 +46,10 @@ Numeral+ [<num>:]
 
 PATTERN Verbs
 PresentPrefix(1) VerbRoot(1) PresentPrefix(2) # Present 
-SecondPersonPluralPrefix(1) VerbRoot(1) Vowels VerbRoot(2) Vowels SecondPersonPluralPrefix(2) #Present (p2 pl)
-PresentImpfPrefix(1) VerbRoot PresentImperfectSuffix(1) #present imperfect
+PresentSecondPersonPluralPrefix(1) VerbRoot(1) PresentVowels VerbRoot(2) PresentVowels PresentSecondPersonPluralPrefix(2) #Present (p2 pl)
+(:GeneralPersonalPrefix(1) VerbRoot PresentImperfectSuffix(1) GeneralPersonalPrefix(2):)[^[Open,Closed]] #present imperfect
+(:GeneralPersonalPrefix(1) PastPrefix VerbRoot(1) PastSuffix  GeneralPersonalPrefix(1):)[^[Open,Closed],^[ConsonantInitial]] #past tense 
+
 
 PATTERN Nouns
 (:GenderPrefix(1) NounRoot GenderPrefix(2):)[^[N,F,M],^[Sg,Pl]]
@@ -66,12 +68,17 @@ Adjective
 
 
 LEXICON VerbRoot(2)
-suj<vblex>:suj>     :suj>
-isuj<vblex>:isuj>   :suj>
-pik<vblex>:pik>     :pik>
-bik<vblex>:bik>     :bik>
-inos<vblex>:inos>   :inos>
-iruk<vblex>:iruk>   :iruk>
+suj<vblex>:suj>[Open,ConsonantInitial]   :suj>
+isuj<vblex>:isuj>[Open]                  :suj>
+pik<vblex>:pik>[Open,ConsonantInitial]   :pik>
+bik<vblex>:bik>[Closed,ConsonantInitial] :bik>
+inos<vblex>:inos>[Open]                  :inos>
+iruk<vblex>:iruk>[Closed]                :iruk>
+yer<vblex>:yer>[Open,ConsonantInitial]  :yer>
+gil<vblex>:gil>[Open,ConsonantInitial]  :gil>
+iyam<vblex>:iyam>[Open]                  :iyam>
+iken<vblex>:iken>[Open]                  :iken>
+inos<vblex>:inos>[Open]                  :inos>
 
 
 LEXICON NounRoot
@@ -198,35 +205,35 @@ LEXICON  PresentPrefix(2)
 :e>     <prs><p3><sg>:
 :e>     <prs><p3><pl>:
 
-LEXICON SecondPersonPluralPrefix(2)
+LEXICON PresentSecondPersonPluralPrefix(2)
 :{K}i>  <prs><p2><pl>: # might want to separate
 
-
-LEXICON PresentImpfPrefix(2)
-:A{a}>  <prs_impf><p1><sg>: # sometimes A sometimes Aa
-:ki>    <prs_impf><p1><pl>:
-:{K}i>  <prs_impf><p2><sg>:
-:{K}i>  <prs_impf><p2><pl>: # might want to separate
-:e>     <prs_impf><p3><sg>:
-:e>     <prs_impf><p3><pl>:
-
-
-LEXICON PresentImperfectSuffix
-:ita>
-
-# PresentPrefix(1) VerbRoot(1) Vowels VerbRoot(2) Vowels PresentPrefix(2) #Present (p2 pl)
-
-
-LEXICON Vowels
+LEXICON PresentVowels
 :{A}>
 
-LEXICON SecondPersonPluralInfo
-:suj>
-:isuj>
-:pik>
-:bik>
-:inos>
-:iruk>
+
+LEXICON GeneralPersonalPrefix(2)
+:A{a}>  <p1><sg>: # sometimes A sometimes Aa
+:ki>    <p1><pl>:
+:{K}i>  <p2><sg>:
+:{K}i>  <p2><pl>: 
+:e>     <p3><sg>:
+:e>     <p3><pl>:
+
+LEXICON PresentImperfectSuffix
+<prs_impf>:ita>[Open]
+<prs_impf>:ito>[Closed]
+
+
+LEXICON PastPrefix
+:t{E}>[ConsonantInitial]
+
+LEXICON PastSuffix
+<past>:a>[Open]
+<past>:o>[Closed]
+
+
+
 
 LEXICON GenderPrefix(2)
 :o{L}>      <nom>:[M,Sg] 

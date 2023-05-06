@@ -18,8 +18,14 @@ C = B C D G H J K L M P R S T R W Z
 
 Rules
 
-"Vowel is realized as vowel two place before (in root)"
+"Vowel is realized as vowel two places before itself (in root, for present-p2pl)"
 %{A%}:Vy <=> :Vx :C %>: _ ;
+      where Vx in ( a e i o u )
+            Vy in ( a e i o u )
+      matched ;
+
+"Vowel is realized as vowel two or three after itself (in root, for past)"
+%{E%}:Vy <=> _ %>: (:C) :C :Vx ;
       where Vx in ( a e i o u )
             Vy in ( a e i o u )
       matched ;
