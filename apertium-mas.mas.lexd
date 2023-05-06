@@ -45,9 +45,11 @@ Adverbs
 Pronouns
 Interjections
 CoorConj
+Numerals
+PossPronoun
 
 PATTERN Number
-Numeral+ [<num>:]
+Numbers+ [<num>:]
 
 PATTERN Verbs
 PresentPrefix(1) VerbRoot(1) PresentPrefix(2) # Present 
@@ -76,6 +78,13 @@ Interjections
 
 PATTERN CoorConj
 CoorConj
+
+PATTERN Numerals
+Numerals
+
+PATTERN PossPronoun
+PossPrnPrefix(1) PossPronoun PossPrnPrefix(2) # check that this works
+
 ###############################################################################
 ###                          L E X I C O N                                  ###
 ###############################################################################
@@ -117,30 +126,36 @@ doinyo<n><m><sg>:doinyo[M,Sg]       #mountain
 doinyo<n><m><pl>:doinyo[M,Pl]
 lee<n><m><sg>:lee[M,Sg]		        #man
 lee<n><m><pl>:lewa[M,Pl]
-langet<n><m><sg>langet[M,Sg]        #bridge
-langet<n><m><pl>langeta[M,Pl]
-loililai<n><m><sg>loililai[M,Sg]    #shoulder
-loililai<n><m><pl>loilila[M,Pl]
+langet<n><m><sg>:langet[M,Sg]        #bridge
+langet<n><m><pl>:langeta[M,Pl]
+loililai<n><m><sg>:loililai[M,Sg]    #shoulder
+loililai<n><m><pl>:loilila[M,Pl]
 reyiet<n><m><sg>:reyiet[M,Sg]	    #river
 reyiet<n><m><pl>:reyieta[M,Pl]
 sesen<n><m><sg>:sesen[M,Sg]	        #body
 sesen<n><m><pl>:seseni[M,Pl]
-soit<n><m><sg>soit[M,Sg]            #stone
+soit<n><m><sg>:soit[M,Sg]            #stone
 soit<n><m><pl>:soito[M,Pl]
-yoyai<n><m><sg>yoyai[M,Sg]          #porcupine
-yoyai<n><m><pl>yoyain[M,Pl]
+yoyai<n><m><sg>:yoyai[M,Sg]          #porcupine
+yoyai<n><m><pl>:yoyain[M,Pl]
 botor<n><m><sg>:botor[M,Sg]
-botoro<n><m><pl>:botoro[M,Sg]
+botor<n><m><pl>:botoro[M,Sg]
 tome<n><m><sg>:tome[M,Sg]
 pul<n><m><sg>:pul[M,Sg]
 murani<n><m><sg>:murani[M,Sg]     #
 alashe<n><m><sg>:alashe[M,Sg]    #brother
-alashera<n><m><pl>:alashera[M,Pl]
+alashe<n><m><pl>:alashera[M,Pl]
 oti<n><m><sg>:oti[M,Sg]
-bene<n><m><sg>bene[M,Sg]    #bag
-benia<n><m><pl>benia[M,Pl]    #bag
+bene<n><m><sg>:bene[M,Sg]    #bag
+bene<n><m><pl>:benia[M,Pl]    #bag
 sero<n><m><sg>:sero[M,Sg]
-seroi<n><m><pl>:seroi[M,Pl]
+sero<n><m><pl>:seroi[M,Pl]
+tungʼani<n><m><sg>:tung{ʼ}ani[M,Sg]
+aiguanani<n><m><sg>:aiguanani[M,Sg]
+aitoriani<n><m><sg>:aitoriani[M,Sg]
+aitoriani<n><m><pl>:aitoriak[M,Pl]
+
+
 
 #fem
 tito<n><f><sg>:tito[F,Sg]           #girl
@@ -249,6 +264,9 @@ apa<adv>:apa
 oshi<adv>:oshi
 ore<adv>:ore
 pe<adv>:pe
+pee<adv>:pee
+shumata<adv>:shumata	#above
+
 
 
 LEXICON Pronouns
@@ -256,14 +274,35 @@ nanu<prn><p1><sg>:nanu
 yook<prn><p1><pl>:yook
 iyie<prn><p2><sg>:iy{i}e
 ndai<prn><p2><pl>:ndai
-nenye<prn><p3><sg>:nenye
+ninye<prn><p3><sg>:ninye
 nenje<prn><p3><pl>:nenje
+naa<prn><rel>:naa
+
+LEXICON PossPronoun
+ai<prn><pos><sg>:ai		#my
+ainei<prn><pos><pl>:ainei	
+ino<prn><pos><sg>:ino	#your
+iono<prn><pos><pl>:iono
+enye<prn><pos><sg>:enye	#3rd sing possessor
+enyena<prn><pos><pl>:enyena
+ang<prn><pos><sg>:ang		#our
+ang<prn><pos><pl>:ang
+inyi<prn><pos><sg>:inyi		#your(pl you)
+inyi<prn><pos><pl>:inyi
+enye<prn><pos><sg>:enye	#their
+enye<prn><pos><pl>:enye
+
+
+
+LEXICON PossPrnPrefix(2)
+#:0 	<f>:
+:l>     <m>:     
 
 LEXICON Interjections  
 oi<ij>:oi
 
 
-LEXICON Numeral
+LEXICON Numbers
 0
 1
 2
@@ -275,9 +314,12 @@ LEXICON Numeral
 8
 9
 
+LEXICON Numerals 
+onom<num>:onom
+
 
 LEXICON  PresentPrefix(2)
-:A{a}>  <prs><p1><sg>: # sometimes A sometimes Aa
+:a{a}>  <prs><p1><sg>: # sometimes A sometimes Aa
 :ki>    <prs><p1><pl>:
 :{K}i>  <prs><p2><sg>:
 :e>     <prs><p3><sg>:

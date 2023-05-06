@@ -1,0 +1,628 @@
+"<Enkiterunolo>" #??
+	"Enkiterunolo" unk 
+"<e>"
+	"e" part
+"<keeya>"
+	"  unk keeya"
+
+"<Ore>"
+	"ore" adv
+"<apa>"
+	"apa" adv
+"<tenkiterunoto>"
+	"tenkiterunoto"  unk 
+"<nemeetae>"
+	"nemeetae"  unk 
+"<apa>"
+	"apa" adv
+"<Keeya>"
+	"Keeya"  unk 
+"<.>"
+	"." sent
+
+"<Inji>"
+	"  unk Inji"
+"<oshi>"
+	"oshi" adv
+"<eikununye>"
+	"eikununye"  unk 
+"<keeya>"
+	"keeya"  unk 
+"<enkop>"
+	"enkop"  unk 
+"<.>"
+	"." sent
+
+"<Enkolong>"
+	"kolong" n f sg nom
+	"kolong" n f sg acc
+"<’>"
+	"'" apos
+"<olapa>"
+	"apa" n m sg nom
+	"apa" n m sg acc
+
+"<Ore>"
+	"ore" adv
+"<apa>"
+	"apa" adv
+"<tiapa>"
+	"tiapa"  unk 
+"<neyam>"
+	"neyam"  unk 
+"<enkolong>"
+	"kolong" n f sg nom
+	"kolong" n f sg acc
+"<’>"
+	"'" apos
+"<olapa>"
+	"apa" n m sg nom
+	"apa" n m sg acc
+"<.>"
+	"." sent
+
+"<Niaku>"
+	"Niaku" unk 
+"<keirukuruko>" #?? 
+	"keirukuruko"  unk 
+"<anaake>"
+	"  unk anaake"
+"<eituruk>"#??
+	"eituruk"  unk 
+"<enkolong>"
+	"kolong" n f sg nom
+	"kolong" n f sg acc
+"<’>"
+	"'" apos
+"<nesuj>" 
+	"suj" vblex narr p3 pl
+	"suj" vblex narr p3 sg
+"<olapa>"
+	"apa" n m sg nom
+	"apa" n m sg acc
+"<.>"
+	"." sent
+
+"<Enkikurrukur>"
+	"Enkikurrukur"  unk 
+"<o>"
+	"o" part
+	"o" cnjcoo
+"<nkaitin>" #??
+	"nkaitin" unk 
+
+"<Eetae>"
+	"Eetae"  unk 
+"<apa>"
+	"apa" adv
+"<nkaitin>"
+	"  unk nkaitin"
+"<are>" #??
+	"are"  unk 
+"<:>"
+	":" sent
+"<enkai>"
+	"kai" n f sg nom
+	"kai" n f sg acc
+"<narok>"
+	"  unk narok"
+"<o>"
+	"o" part
+	"o" cnjcoo
+"<enkai>"
+	"kai" n f sg nom
+	"kai" n f sg acc
+"<nanyokie>"
+	"nanyokie"  unk 
+"<.>"
+	"." sent
+
+"<Entito>"
+	"tito" n f sg nom
+	"tito" n f sg acc
+"<nayama>"
+	"  unk nayama"
+"<olkurruk>" #??
+	"olkurruk"  unk 
+
+"<Yieyio>"
+	"Yieyio"  unk 
+"<,>"
+	"," cm
+"<papa>" #??
+	"papa"  unk 
+
+"<kaji>"
+	"kaji"  unk 
+"<duo>"
+	"  unk 
+"<?>"
+	"?" sent
+
+"<Natito>"
+	"tito" n f sg voc
+"<e>"
+	"e" part
+"<Tiyiogo>"
+	"Tiyiogo"  unk 
+
+"<Kaayieu>"#??
+	"Kaayieu"  unk 
+
+"<Kaayieu>"
+	"Kaayieu"  unk 
+"<nanu>"
+	"nanu" prn p1 sg
+"<iyie>"
+	"iyie" prn p2 sg
+
+"<Maayieu>"#??
+	"Maayieu"  unk 
+
+"<Maayieu>"
+	"Maayieu"  unk 
+"<nanu>"
+	"nanu" prn p1 sg
+"<iyie>"
+	"iyie" prn p2 sg
+
+"<Enkoipapaai>" #??
+	"Enkoipapaai"  unk 
+"<ai>"
+	"ai" prn pos sg
+"<e>"
+	"e" part
+"<nanu>"
+	"nanu" prn p1 sg
+
+"<Asuj>"
+	"suj" vblex prs p1 sg
+
+"<Kisúj>" #?? should spell relax
+	"Kisúj" unk 
+
+"<Aisuj>"
+	"isuj" vblex prs p1 sg
+
+"<Kiisúj>" #?? should spell relax
+	"Kiisúj"  unk 
+ 
+"<Eton>" 
+	"Eton"  unk 
+"<asuj>"
+	"suj" vblex prs p1 sg
+
+"<Eton>"
+	"Eton"  unk 
+"<aisuj>"
+	"isuj" vblex prs p1 sg
+
+"<Ateyera>" #?? the next few
+	"  unk 
+
+"<Atigila>" #?? 
+	"gil" vblex past
+
+"<Atusuja>" #?? 
+	"suj" vblex past
+
+"<Aiyama>" #?? 
+	"Aiyama"  unk 
+
+"<Aikena>" #?? 
+	"Aikena"  unk 
+
+"<Ainosa>" #?? 
+	"Ainosa"  unk 
+
+"<Aisuja>" #?? 
+	"Aisuja"  unk 
+
+"<napik>"
+	"pik" vblex narr p1 sg
+
+"<nipik>"
+	"pik" vblex narr p2 pl
+	"pik" vblex narr p2 sg
+
+"<nepik>"
+	"pik" vblex narr p3 pl
+	"pik" vblex narr p3 sg
+
+"<nikipiki>" #?? 
+	"nikipiki"  unk 
+
+"<nipikipiki>" #?? 
+	"nipikipiki"  unk 
+
+"<nepik>"
+	"pik" vblex narr p3 pl
+	"pik" vblex narr p3 sg
+
+"<nabik>"
+	"bik" vblex narr p1 sg
+
+"<nibik>"
+	"bik" vblex narr p2 pl
+	"bik" vblex narr p2 sg
+
+"<nebik>"
+	"bik" vblex narr p3 pl
+	"bik" vblex narr p3 sg
+
+"<nikibiki>" #?? 
+	"nikibiki"  unk 
+
+"<nibikibiki>" #?? 
+	"nibikibiki"  unk 
+
+"<nebik>"
+	"bik" vblex narr p3 pl
+	"bik" vblex narr p3 sg
+
+"<Naa>"
+	"naa" prn rel
+"<keilep>"
+	"  unk keilep"
+"<apa>"
+	"apa" adv
+"<ele>"
+	"  unk ele"
+"<tung>"
+	"  unk tung"
+"<'>"
+	"'" apos
+"<ani>"
+	"ani"  unk 
+"<to>" #??
+	"to"  unk 
+"<lari>" #??
+	"lari"  unk 
+"<ake>" #??
+	"ake"  unk 
+"<o>"
+	"o" part
+	"o" cnjcoo
+"<to>" #??
+	"  unk to"
+"<lari>" #??
+	"lari"  unk 
+"<ailep>"
+	"ailep"  unk 
+"<te>"
+	"te" part
+"<nkanasa>"
+	"nkanasa"  unk 
+"<enye>"
+	"enye" prn pos pl
+	"enye" prn pos sg
+"<alo>"
+	"lo" vblex prs p1 sg
+"<aserem>"
+	"aserem"  unk 
+"<nepolosaki>"
+	"  unk nepolosaki"
+"<Olaitoriani>"
+	"aitoriani" n m sg nom
+	"aitoriani" n m sg acc
+"<loo>"
+	"lo" part
+"<lororani>" #??
+	"lororani"  unk 
+"<te>"
+	"te" part
+"<Shilo>"
+	"  unk Shilo"
+"<,>"
+	"," cm
+"<te>"
+	"te" part
+"<ine>"
+	"ine"  unk 
+"<apa>"
+	"apa" adv
+"<nerayie>"
+	"nerayie"  unk 
+"<ilayiok>"
+	"ayioni" n m pl nom
+	"ayioni" n m pl acc
+"<pokira>"
+	"pokira"  unk 
+"<oare>"
+	"oare"  unk 
+"<le>"
+	"le" part
+"<Eli>"
+	"Eli"  unk 
+"<,>"
+	"," cm
+"<Hofni>" #??
+	"Hofni"  unk 
+"<o>"
+	"o" part
+	"o" cnjcoo
+"<Finehas>" #??
+	"Finehas"  unk 
+"<ilapolosak>"
+	"ilapolosak"  unk 
+"<lo>"
+	"lo" part
+"<Laitoriani>"
+	"Laitoriani"  unk 
+"<.>"
+	"." sent
+ 
+"<engare>"
+	"gare" n f sg nom
+	"gare" n f sg acc
+"<:>"
+	":" sent
+"<">"
+	""" quot
+"<Oi>"
+	"oi" ij
+"<!>"
+	"!" sent
+"<aatookuo>"
+	"aatookuo"  unk 
+"<,>"
+	"," cm
+"<Oi>"
+	"oi" ij
+"<!>"
+	"!" sent
+"<aatookuo>"
+	"aatookuo"  unk 
+"<.>"
+	"." sent
+"<">"
+	""" quot
+
+"<Najo>"
+	"jo" vblex narr p1 sg
+"<kweta>"
+	"kweta"  unk 
+"<nekweni>"
+	"nekweni"  unk 
+"<osero>"
+	"sero" n m sg nom
+	"sero" n m sg acc
+"<.>"
+	"." sent
+"<'>"
+	"'" apos
+
+"<Nejoki>"
+	"joki" vblex narr p3 pl
+	"joki" vblex narr p3 sg
+"<olalashe>"
+	"alashe" n m sg nom
+	"alashe" n m sg acc
+"<:>"
+	":" sent
+"<'>"
+	"'" apos
+"<Tonotai>"
+	"Tonotai"  unk 
+"<nennaamulak>"
+	"nennaamulak"  unk 
+"<,>"
+	"," cm
+
+"<amu>"
+	"amu" conjcoo
+"<ira>"
+	"ira"  unk 
+"<iye>"
+	"iyie" prn p2 sg
+"<kuret>"
+	"kuret"  unk 
+"<,>"
+	"," cm
+"<'>"
+	"'" apos
+"<neya>"
+	"neya"  unk 
+"<engiludye>" #??
+	"engiludye"  unk 
+"<,>"
+	"," cm
+ 
+"<nelo>"
+	"lo" vblex narr p3 pl
+	"lo" vblex narr p3 sg
+"<oreiet>"
+	"  unk oreiet"
+"<.>"
+	"." sent
+ 
+"<Neiro>"
+	"Neiro"  unk 
+"<engare>"
+	"gare" n f sg nom
+	"gare" n f sg acc
+"<:>"
+	":" sent
+"<'>"
+	"'" apos
+"<Oi>"
+	"oi" ij
+"<!>"
+	"!" sent
+"<aatookuo>"
+	"aatookuo"  unk 
+"<,>"
+	"," cm
+"<Oi>"
+	"oi" ij
+"<!>"
+	"!" sent
+
+"<aatookuo>"
+	"aatookuo" unk 
+"<'>"
+	"'" apos
+"<.>"
+	"." sent
+
+"<Nejoki>"
+	"joki" vblex narr p3 pl
+	"joki" vblex narr p3 sg
+"<:>"
+	":" sent
+"<'>"
+	"'" apos
+"<Ee>"
+	"  unk Ee"
+"<,>"
+	"," cm
+"<aaotiki>"
+	"aaotiki"  unk 
+"<aoku>"
+	"aoku"  unk 
+"<.>"
+	"." sent
+"<'>"
+	"'" apos
+
+"<Neoku>" #??
+	"Neoku"  unk 
+"<engare>"
+	"gare" n f sg nom
+	"gare" n f sg acc
+"<,>"
+	"," cm
+"<nerinyunye>"
+	"  unk nerinyunye"
+
+"<olpul>"
+	"pul" n m sg nom
+	"pul" n m sg acc
+"<,>"
+	"," cm
+"<nejoki>"
+	"joki" vblex narr p3 pl
+	"joki" vblex narr p3 sg
+"<olalashe>"
+	"alashe" n m sg nom
+	"alashe" n m sg acc
+"<:>"
+	":" sent
+"<'>"
+	"'" apos
+"<Inno>"
+	"  unk Inno"
+"<,>"
+	"," cm
+
+"<tigilu>"
+	"tigilu"  unk 
+"<'>"
+	"'" apos
+"<lkak>"
+	"  unk lkak"
+"<.>"
+	"." sent
+"<'>"
+	"'" apos
+
+"<Nelo>"
+	"lo" vblex narr p3 pl
+	"lo" vblex narr p3 sg
+"<agilu>"
+	"  unk agilu"
+"<'>"
+	"'" apos
+"<Ikak>"
+	"Ikak"  unk 
+"<,>"
+	"," cm
+"<neibuñg>"
+	"neibuñg"  unk 
+
+"<olchata>" #??
+	"olchata"  unk 
+"<agil>"
+	"gil" vblex prs p1 sg
+"<,>"
+	"," cm
+"<nejo>"
+	"jo" vblex narr p3 pl
+	"jo" vblex narr p3 sg
+"<'>"
+	"'" apos
+"<ikak>" #??
+	"ikak"  unk 
+"<:>"
+	":" sent
+"<'>"
+	"'" apos
+"<Oi>"
+	"oi" ij
+"<!>"
+	"!" sent
+
+"<etigila>"
+	"gil" vblex past
+"<'>"
+	"'" apos
+"<yook>"
+	"yook" prn p1 pl
+"<,>"
+	"," cm
+"<Oi>"
+	"oi" ij
+"<!>"
+	"!" sent
+"<etigila>"
+	"gil" vblex past
+"<'>"
+	"'" apos
+"<yook>"
+	"yook" prn p1 pl
+"<.>"
+	"." sent
+"<'>"
+	"'" apos
+
+"<Neureyu>"
+	"Neureyu"  unk 
+"<,>"
+	"," cm
+"<neipiri>"
+	"neipiri"  unk 
+"<,>"
+	"," cm
+"<nelotu>"
+	"nelotu"  unk 
+
+"<olpul>"
+	"pul" n m sg nom
+	"pul" n m sg acc
+"<.>"
+	"." sent
+
+"<Nejoki>"
+	"joki" vblex narr p3 pl
+	"joki" vblex narr p3 sg
+"<olalashe>"
+	"alashe" n m sg nom
+	"alashe" n m sg acc
+"<:>"
+	":" sent
+"<'>"
+	"'" apos
+"<Astabuakitya>"
+	"  unk Astabuakitya"
+
+"<'>"
+	"'" apos
+"<lkak>"
+	"lkak"  unk 
+"<.>"
+	"." sent
+"<'>"
+	"'" apos
+"<.>"
+	"." sent
+
