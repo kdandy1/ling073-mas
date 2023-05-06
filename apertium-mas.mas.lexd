@@ -50,6 +50,9 @@ PresentPrefix(1) VerbRoot(1) PresentPrefix(2) # Present
 PresentSecondPersonPluralPrefix(1) VerbRoot(1) PresentVowels VerbRoot(2) PresentVowels PresentSecondPersonPluralPrefix(2) #Present (p2 pl)
 (:GeneralPersonalPrefix(1) VerbRoot PresentImperfectSuffix(1) GeneralPersonalPrefix(2):)[^[Open,Closed]] #present imperfect
 (:GeneralPersonalPrefix(1) PastPrefix VerbRoot(1) PastSuffix  GeneralPersonalPrefix(1):)[^[Open,Closed],^[ConsonantInitial]] #past tense 
+(:NarrativeTensePrefix GeneralPersonalPrefix(1) VerbRoot NarrativeTenseSuffix GeneralPersonalPrefix(2):)[^[Open,Closed]] #present imperfect
+
+
 
 
 PATTERN Nouns
@@ -195,12 +198,9 @@ lo<part>:lo{O}      #genitive if nom and gen are masc in method 2
 o<part>:o{O}        #genitive if nom is fem and gen masc in method 2
 e<part>:e           #genitive if both are feminine in method 2
 
-<<<<<<< HEAD
-=======
 LEXICON CoorConj
 o<cnjcoo>:o{O}
 
->>>>>>> c2c8227153aefc7b2267aaac710be7e1f3bbfe62
 LEXICON Numeral
 0
 1
@@ -249,7 +249,12 @@ LEXICON PastSuffix
 <past>:o>[Closed]
 
 
+NarrativeTensePrefix
+:n>
 
+NarrativeTenseSuffix
+<narr>:ita>[Open]
+<narr>:ito>[Closed]
 
 LEXICON GenderPrefix(2)
 :o{L}>      <nom>:[M,Sg] 
