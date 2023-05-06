@@ -1,5 +1,6 @@
-"<Enkiterunolo>" #??
-	"Enkiterunolo" unk 
+"<Enkiterunolo>" 
+	"kiterunolo" n f sg nom
+	"kiterunolo" n f sg acc
 "<e>"
 	"e" part
 "<keeya>"
@@ -63,11 +64,11 @@
 
 "<Niaku>"
 	"Niaku" unk 
-"<keirukuruko>" #?? 
+"<keirukuruko>" 
 	"keirukuruko"  unk 
 "<anaake>"
 	"  unk anaake"
-"<eituruk>"#??
+"<eituruk>"
 	"eituruk"  unk 
 "<enkolong>"
 	"kolong" n f sg nom
@@ -93,10 +94,11 @@
 
 "<Eetae>"
 	"Eetae"  unk 
-"<apa>"
+"<apa>"f
 	"apa" adv
 "<nkaitin>"
-	"  unk nkaitin"
+	"kai" n f pl nom
+	"kai" n f pl acc
 "<are>" #??
 	"are"  unk 
 "<:>"
@@ -105,7 +107,7 @@
 	"kai" n f sg nom
 	"kai" n f sg acc
 "<narok>"
-	"  unk narok"
+	"narok"  unk 
 "<o>"
 	"o" part
 	"o" cnjcoo
@@ -122,15 +124,18 @@
 	"tito" n f sg acc
 "<nayama>"
 	"  unk nayama"
-"<olkurruk>" #??
-	"olkurruk"  unk 
+"<olkurruk>"
+	"kurruk" n m sg nom
+	"kurruk" n m sg acc
 
 "<Yieyio>"
-	"Yieyio"  unk 
+	"yieyio" n f sg nom
+	"yieyio" n f sg acc
 "<,>"
 	"," cm
-"<papa>" #??
-	"papa"  unk 
+"<papa>" 
+	"papa" n m sg nom
+	"papa" n m sg acc
 
 "<kaji>"
 	"kaji"  unk 
@@ -156,7 +161,7 @@
 "<iyie>"
 	"iyie" prn p2 sg
 
-"<Maayieu>"#??
+"<Maayieu>"
 	"Maayieu"  unk 
 
 "<Maayieu>"
@@ -166,7 +171,7 @@
 "<iyie>"
 	"iyie" prn p2 sg
 
-"<Enkoipapaai>" #??
+"<Enkoipapaai>" 
 	"Enkoipapaai"  unk 
 "<ai>"
 	"ai" prn pos sg
