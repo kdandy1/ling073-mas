@@ -40,6 +40,7 @@ Punctuation
 Verbs
 Nouns
 Adjectives
+Particles
 
 PATTERN Number
 Numeral+ [<num>:]
@@ -56,6 +57,9 @@ PATTERN Nouns
 
 PATTERN Adjectives
 Adjective
+
+PATTERN Particles
+Particle
 
 ###############################################################################
 ###                          L E X I C O N                                  ###
@@ -183,7 +187,16 @@ asipani<adj><pl>:asipak
 sikitoi<adj><sg>:sikitoi        #yellow
 sikitoi<adj><pl>:sikitok
 
+LEXICON Particle
+te<part>:t{e}       #locative
+le<part>:l{e}       #genitive if nom is masculine in method 1
+e<part>:e           #genitive if nom is feminine in method 1
+lo<part>:lo{O}      #genitive if nom and gen are masc in method 2 
+o<part>:o{O}        #genitive if nom is fem and gen masc in method 2
+e<part>:e           #genitive if both are feminine in method 2
 
+LEXICON CoorConj
+o<cnjcoo>:o{O}
 
 LEXICON Numeral
 0
