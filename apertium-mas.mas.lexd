@@ -56,8 +56,8 @@ PresentPrefix(1) VerbRoot(1) PresentPrefix(2) # Present
 PresentSecondPersonPluralPrefix(1) VerbRoot(1) PresentVowels VerbRoot(2) PresentVowels PresentSecondPersonPluralPrefix(2) #Present (p2 pl)
 (:GeneralPersonalPrefix(1) VerbRoot PresentImperfectSuffix(1) GeneralPersonalPrefix(2):)[^[Open,Closed]] #present imperfect
 (:GeneralPersonalPrefix(1) PastPrefix VerbRoot(1) PastSuffix  GeneralPersonalPrefix(2):)[^[Open,Closed],^[ConsonantInitial,VowelInitial]] #past tense 
-NarrativeTensePrefix(1) GeneralPersonalPrefix(1) VerbRoot(1) NarrativeTensePrefix(2) GeneralPersonalPrefix(2) #narrative
-NarrativeTensePrefix(1) GeneralPersonalPrefix(1) VerbRoot(1) PresentVowels VerbRoot(2) PresentVowels NarrativeTensePrefix(2) GeneralPersonalPrefix(2) #narrative (p2 pl)
+NarrativeTensePrefix(1) NarrativePersonalPrefix(1) VerbRoot(1) NarrativeTensePrefix(2) NarrativePersonalPrefix(2) #narrative
+NarrativeTensePrefix(1) NarrativeSecondPersonPluralPrefix(1) VerbRoot(1) PresentVowels VerbRoot(2) PresentVowels NarrativeTensePrefix(2) NarrativeSecondPersonPluralPrefix(2) #narrative (p2 pl)
 
 
 PATTERN Nouns
@@ -99,19 +99,19 @@ PossPrnPrefix(1) PossPronoun PossPrnPrefix(2) # check that this works
 
 LEXICON VerbRoot(2)
 suj<vblex>:suj>[Open,ConsonantInitial]   :suj> 
-isuj<vblex>:isuj>[Open,VowelInitial]                  :isuj>
+isuj<vblex>:isuj>[Open,VowelInitial]     :isuj>
 pik<vblex>:pik>[Open,ConsonantInitial]   :pik>
 bik<vblex>:bik>[Closed,ConsonantInitial] :bik> 
-inos<vblex>:inos>[Open,VowelInitial]                :inos>
+inos<vblex>:inos>[Open,VowelInitial]     :inos>
 iruk<vblex>:iruk>[Closed]                :iruk>
 yer<vblex>:yer>[Open,ConsonantInitial]   :yer>
 gil<vblex>:gil>[Open,ConsonantInitial]   :gil> 
-iyam<vblex>:iyam>[Open,VowelInitial]                 :iyam>
-iken<vblex>:iken>[Open,VowelInitial]                 :iken>
-inos<vblex>:inos>[Open,VowelInitial]                  :inos>
-joki<vblex>:joki[Open,ConsonantInitial]                   :joki> 
-jo<vblex>:jo[Open,ConsonantInitial]                       :jo> 
-lo<vblex>:lo[Open,ConsonantInitial]                       :lo>	#to go 
+iyam<vblex>:iyam>[Open,VowelInitial]     :iyam>
+iken<vblex>:iken>[Open,VowelInitial]     :iken>
+inos<vblex>:inos>[Open,VowelInitial]     :inos>
+joki<vblex>:joki[Open,ConsonantInitial]  :joki> 
+jo<vblex>:jo[Open,ConsonantInitial]      :jo> 
+lo<vblex>:lo[Open,ConsonantInitial]      :lo>	#to go 
 toni<vblex>:toni[Open,ConsonantInitial]  :toni>   
 
 
@@ -205,8 +205,8 @@ gare<n><f><sg>:gare[F,Sg]
 
 
 #neuter
-wueji<n><n><sg>:wueji[N,Sg]         #place
-wueji<n><n><pl>:wuejitin[N,Pl]
+wueji<n><nt><sg>:wueji[N,Sg]         #place
+wueji<n><nt><pl>:wuejitin[N,Pl]
 
 LEXICON Adjective
 #only different for sing and plural, and plurals are as various as w/Nouns
@@ -321,7 +321,7 @@ onom<num>:onom
 
 
 LEXICON  PresentPrefix(2)
-:a{a}>  <prs><p1><sg>: # sometimes A sometimes Aa
+a{A}>  <prs><p1><sg>: # sometimes A sometimes Aa
 :ki>    <prs><p1><pl>:
 :{K}i>  <prs><p2><sg>:
 :e>     <prs><p3><sg>:
@@ -336,12 +336,22 @@ LEXICON PresentVowels
 
 
 LEXICON GeneralPersonalPrefix(2)
-:a{a}>  <p1><sg>: # sometimes A sometimes Aa
+:a{A}>  <p1><sg>: # sometimes A sometimes Aa
 :ki>    <p1><pl>:
 :{K}i>  <p2><sg>:
 :{K}i>  <p2><pl>: 
 :e>     <p3><sg>:
 :e>     <p3><pl>:
+
+LEXICON NarrativePersonalPrefix(2)
+a{A}>  <p1><sg>: # sometimes A sometimes Aa
+:ki>    <p1><pl>:
+:{K}i>  <p2><sg>: 
+:e>     <p3><sg>:
+:e>     <p3><pl>:
+
+LEXICON NarrativeSecondPersonPluralPrefix(2)
+:i>     <p2><pl>:
 
 LEXICON PresentImperfectSuffix
 <prs_impf>:ita>[Open]

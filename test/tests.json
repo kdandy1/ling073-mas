@@ -1,10 +1,1 @@
-{
-    "analysis": {
-        "input": "analysis-input.txt",
-        "mode": "mas-disam"
-    },
-    "generation": {
-        "input": "generation-input.txt",
-        "mode": "mas-gener"
-    }
-}
+{"analysis": {"input": "analysis-input.txt", "mode": "mas-disam"}, "generation": {"input": "generation-input.txt", "mode": "mas-gener"}, "Nominative-morph": {"input": "Nominative/Nominative-morph-input.txt", "mode": "mas-morph"}, "Nominative-gen": {"input": "Nominative/Nominative-gen-input.txt", "mode": "mas-gener"}, "Adjectives-morph": {"input": "Adjectives/Adjectives-morph-input.txt", "mode": "mas-morph"}, "Adjectives-gen": {"input": "Adjectives/Adjectives-gen-input.txt", "mode": "mas-gener"}, "Present Tense-morph": {"input": "Present Tense/Present Tense-morph-input.txt", "mode": "mas-morph"}, "Present Tense-gen": {"input": "Present Tense/Present Tense-gen-input.txt", "mode": "mas-gener"}, "Imperfect Progressive-morph": {"input": "Imperfect Progressive/Imperfect Progressive-morph-input.txt", "mode": "mas-morph"}, "Imperfect Progressive-gen": {"input": "Imperfect Progressive/Imperfect Progressive-gen-input.txt", "mode": "mas-gener"}, "Past-morph": {"input": "Past/Past-morph-input.txt", "mode": "mas-morph"}, "Past-gen": {"input": "Past/Past-gen-input.txt", "mode": "mas-gener"}, "Narrative-morph": {"input": "Narrative/Narrative-morph-input.txt", "mode": "mas-morph"}, "Narrative-gen": {"input": "Narrative/Narrative-gen-input.txt", "mode": "mas-gener"}}
