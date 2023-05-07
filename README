@@ -1,12 +1,12 @@
-Masai: `apertium-mas`
+Maasai: `apertium-mas`
 ===============================================================================
 
 This is an Apertium monolingual language package for Masai. What
 you can use this language package for:
 
-* Morphological analysis of Masai
-* Morphological generation of Masai
-* Part-of-speech tagging of Masai
+* Morphological analysis of Maasai
+* Morphological generation of Maasai
+* Part-of-speech tagging of Maasai
 
 Requirements
 -------------------------------------------------------------------------------
