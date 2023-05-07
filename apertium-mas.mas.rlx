@@ -4,12 +4,28 @@ DELIMITERS = "<.>" ;
 # We can define sets for common tag clusters
 # LIST Case = (n s) (n p) ; # A set that matches either a Noun Singular or a Noun Plural
 
-SECTION
-# If there is a singular noun to the right, I cannot be a verb or noun.
-# REMOVE (n) OR (v) IF (1 (n s)) ;
+LIST AccFSg = (n f sg acc);
+LIST AccFPl = (n f pl acc);
+LIST AccMSg = (n m sg acc);
+LIST AccMPl = (n m pl acc);
+LIST NomFSg = (n f sg nom);
+LIST NomFPl = (n f pl nom);
+LIST NomMSg = (n m sg nom);
+LIST NomMPl = (n m pl nom);
 
-# If there is a conjunction followed by a certain cohort of the same CASE as me, choose me.
-# SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
+SECTION
+# If there is a verb to my left, I cannot be accusative.
+REMOVE AccFSg IF (-1 (vblex)) ;
+
+# If there is a verb to my left, I cannot be accusative.
+REMOVE AccFPl IF (-1 (vblex)) ;
+
+# If there is a verb to my left, I cannot be accusative.
+REMOVE AccMSg IF (-1 (vblex)) ;
+
+# If there is a verb to my left, I cannot be accusative.
+REMOVE AccMPl IF (-1 (vblex)) ;
+
 
 # Resources:
 # http://visl.sdu.dk/cg3.html

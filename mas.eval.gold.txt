@@ -239,7 +239,8 @@
 	"pik"  unk 
 
 "<nipikipiki>" 
-	"pik"  vblex prs p2 pl
+	"pik" vblex narr p2 pl
+	"pik" vblex narr p2 sg
 
 "<nepik>"
 	"pik" vblex narr p3 pl
@@ -260,7 +261,8 @@
 	"nikibiki"  unk 
 
 "<nibikibiki>" 
-	"bik"  vblex prs p2 pl
+	"bik" vblex narr p2 pl
+	"bik" vblex narr p2 sg
 
 "<nebik>"
 	"bik" vblex narr p3 pl
@@ -269,13 +271,13 @@
 "<Naa>"
 	"naa" prn rel
 "<keilep>"
-	"  unk keilep"
+	"keilep"  unk 
 "<apa>"
 	"apa" adv
 "<ele>"
-	"  unk ele"
+	"ele"  unk 
 "<tung>"
-	"  unk tung"
+	"tung"  unk 
 "<'>"
 	"'" apos
 "<ani>"
@@ -570,7 +572,8 @@
 	"!" sent
 
 "<etigila>"
-	"gil" vblex past
+	"gil" vblex past p3 pl
+	"gil" vblex past p3 sg
 "<'>"
 	"'" apos
 "<yook>"
@@ -582,7 +585,8 @@
 "<!>"
 	"!" sent
 "<etigila>"
-	"gil" vblex past
+	"gil" vblex past p3 pl
+	"gil" vblex past p3 sg
 "<'>"
 	"'" apos
 "<yook>"

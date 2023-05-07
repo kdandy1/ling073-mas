@@ -17,10 +17,10 @@ Alphabet
 
 Sets
 
-Vowel = A Ä Á E Ẽ É I Í Ĩ O Ō Ö Ó U Ū Ú Y
-        a ä á e ẽ é i í ĩ o ō ö ó u ū ú y ;
-C = B C D G H J K L M P R S T R W Z 
-    b c d g h j k l m p r s t r w z ;
+Vowel = A Ä Á E Ẽ É I Í Ĩ O Ō Ö Ó U Ū Ú
+        a ä á e ẽ é i í ĩ o ō ö ó u ū ú ;
+C = B C D G H J K L M P R S T R W Y Z 
+    b c d g h j k l m p r s t r w y z ;
 
 Rules
 
