@@ -89,17 +89,18 @@
 "<o>"
 	"o" part
 	"o" cnjcoo
-"<nkaitin>" #??
-	"nkaitin" unk 
+"<nkaitin>"
+	"kai" n f pl nom
+	"kai" n f pl acc 
 
 "<Eetae>"
 	"Eetae"  unk 
-"<apa>"f
+"<apa>"
 	"apa" adv
 "<nkaitin>"
 	"kai" n f pl nom
 	"kai" n f pl acc
-"<are>" #??
+"<are>"
 	"are"  unk 
 "<:>"
 	":" sent
@@ -140,7 +141,7 @@
 "<kaji>"
 	"kaji"  unk 
 "<duo>"
-	"  unk 
+	"duo" adv
 "<?>"
 	"?" sent
 
@@ -151,7 +152,7 @@
 "<Tiyiogo>"
 	"Tiyiogo"  unk 
 
-"<Kaayieu>"#??
+"<Kaayieu>"
 	"Kaayieu"  unk 
 
 "<Kaayieu>"
@@ -183,45 +184,45 @@
 "<Asuj>"
 	"suj" vblex prs p1 sg
 
-"<Kisúj>" #?? should spell relax
-	"Kisúj" unk 
+"<Kisúj>"
+	"súj" vblex prs p1 sl
 
 "<Aisuj>"
 	"isuj" vblex prs p1 sg
 
-"<Kiisúj>" #?? should spell relax
-	"Kiisúj"  unk 
+"<Kiisúj>" 
+	"isúj" vblex prs p1 sl 
  
 "<Eton>" 
-	"Eton"  unk 
+	"Eton"  adv 
 "<asuj>"
 	"suj" vblex prs p1 sg
 
 "<Eton>"
-	"Eton"  unk 
+	"Eton"  adv 
 "<aisuj>"
 	"isuj" vblex prs p1 sg
 
-"<Ateyera>" #?? the next few
-	"  unk 
+"<Ateyera>"
+	"yer" vblex past p1 sg
 
-"<Atigila>" #?? 
-	"gil" vblex past
+"<Atigila>" 
+	"gil" vblex past p1 sg
 
-"<Atusuja>" #?? 
-	"suj" vblex past
+"<Atusuja>"
+	"suj" vblex past p1 sg
 
-"<Aiyama>" #?? 
-	"Aiyama"  unk 
+"<Aiyama>" 
+	"iyam" vblex past p1 sg
 
-"<Aikena>" #?? 
-	"Aikena"  unk 
+"<Aikena>" 
+	"iken"  vblex past p1 sg
 
-"<Ainosa>" #?? 
-	"Ainosa"  unk 
+"<Ainosa>" 
+	"inos"  vblex past p1 sg
 
-"<Aisuja>" #?? 
-	"Aisuja"  unk 
+"<Aisuja>" 
+	"isuj"  vblex past p1 sg
 
 "<napik>"
 	"pik" vblex narr p1 sg
@@ -234,11 +235,11 @@
 	"pik" vblex narr p3 pl
 	"pik" vblex narr p3 sg
 
-"<nikipiki>" #?? 
-	"nikipiki"  unk 
+"<nikipiki>" 
+	"pik"  unk 
 
-"<nipikipiki>" #?? 
-	"nipikipiki"  unk 
+"<nipikipiki>" 
+	"pik"  vblex prs p2 pl
 
 "<nepik>"
 	"pik" vblex narr p3 pl
@@ -255,11 +256,11 @@
 	"bik" vblex narr p3 pl
 	"bik" vblex narr p3 sg
 
-"<nikibiki>" #?? 
+"<nikibiki>" 
 	"nikibiki"  unk 
 
-"<nibikibiki>" #?? 
-	"nibikibiki"  unk 
+"<nibikibiki>" 
+	"bik"  vblex prs p2 pl
 
 "<nebik>"
 	"bik" vblex narr p3 pl
@@ -279,18 +280,18 @@
 	"'" apos
 "<ani>"
 	"ani"  unk 
-"<to>" #??
+"<to>" 
 	"to"  unk 
-"<lari>" #??
+"<lari>"
 	"lari"  unk 
-"<ake>" #??
+"<ake>" 
 	"ake"  unk 
 "<o>"
 	"o" part
 	"o" cnjcoo
-"<to>" #??
-	"  unk to"
-"<lari>" #??
+"<to>" 
+	"to"  unk 
+"<lari>" 
 	"lari"  unk 
 "<ailep>"
 	"ailep"  unk 
@@ -306,13 +307,13 @@
 "<aserem>"
 	"aserem"  unk 
 "<nepolosaki>"
-	"  unk nepolosaki"
+	"nepolosaki"  unk 
 "<Olaitoriani>"
 	"aitoriani" n m sg nom
 	"aitoriani" n m sg acc
 "<loo>"
 	"lo" part
-"<lororani>" #??
+"<lororani>" 
 	"lororani"  unk 
 "<te>"
 	"te" part
@@ -341,12 +342,12 @@
 	"Eli"  unk 
 "<,>"
 	"," cm
-"<Hofni>" #??
+"<Hofni>" 
 	"Hofni"  unk 
 "<o>"
 	"o" part
 	"o" cnjcoo
-"<Finehas>" #??
+"<Finehas>" 
 	"Finehas"  unk 
 "<ilapolosak>"
 	"ilapolosak"  unk 
@@ -428,7 +429,7 @@
 	"'" apos
 "<neya>"
 	"neya"  unk 
-"<engiludye>" #??
+"<engiludye>" 
 	"engiludye"  unk 
 "<,>"
 	"," cm
@@ -490,7 +491,7 @@
 "<'>"
 	"'" apos
 
-"<Neoku>" #??
+"<Neoku>" 
 	"Neoku"  unk 
 "<engare>"
 	"gare" n f sg nom
@@ -516,7 +517,7 @@
 "<'>"
 	"'" apos
 "<Inno>"
-	"  unk Inno"
+	"Inno"  unk 
 "<,>"
 	"," cm
 
@@ -525,7 +526,7 @@
 "<'>"
 	"'" apos
 "<lkak>"
-	"  unk lkak"
+	"lkak"  unk 
 "<.>"
 	"." sent
 "<'>"
@@ -535,7 +536,7 @@
 	"lo" vblex narr p3 pl
 	"lo" vblex narr p3 sg
 "<agilu>"
-	"  unk agilu"
+	"agilu"  unk 
 "<'>"
 	"'" apos
 "<Ikak>"
@@ -545,8 +546,9 @@
 "<neibuñg>"
 	"neibuñg"  unk 
 
-"<olchata>" #??
-	"olchata"  unk 
+"<olchata>" 
+	"chata" n m sg nom
+	"chata" n m sg acc 
 "<agil>"
 	"gil" vblex prs p1 sg
 "<,>"
@@ -556,7 +558,7 @@
 	"jo" vblex narr p3 sg
 "<'>"
 	"'" apos
-"<ikak>" #??
+"<ikak>" 
 	"ikak"  unk 
 "<:>"
 	":" sent
